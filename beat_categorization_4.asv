@@ -1,0 +1,8 @@
+
+beat_type_1;
+beat_type_2 = zeros(1,length(beat_type_1));
+beat_type_2 = categorical(beat_type_2);
+
+for i = 1:length(beat_type_2)
+    if beat_type_1(i) == "N" | beat_type_1(i) == "L" | beat_type_1(i) == "R" | beat_type_1(i) == "e" | beat_type_1(i) == "j"
+        beat_type_2(i) = "N" ;
